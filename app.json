@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "toggleROS",
+    "slug": "toggleROS",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "toggleROS"
+}
