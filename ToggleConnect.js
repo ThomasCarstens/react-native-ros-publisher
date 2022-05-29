@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useROS } from './ROS'
-import { StyleSheet, Text, View, TextInput, Button, Flatlist} from 'react-native';
+import { StyleSheet, Text, View, TextInput, Input, Button, Flatlist} from 'react-native';
 
 function ToggleConnect() {
   const { isConnected, topics, url, changeUrl, toggleConnection, toggleAutoconnect} = useROS();
@@ -44,8 +44,9 @@ function ToggleConnect() {
 
         <View>
         <Text>
-            Simple connect:  <Button onClick={ toggleConnection } title="Toggle Connect"/>  {"\n"}
-            ROS url input:  <TextInput name="urlInput" placeholder={ url } onChangeText={event => changeUrl(event.target.value)} />  {"\n"}
+            Simple connect:  <Button onClick={ toggleConnection } title="Toggle Connect"/>  {"\n"}{"\n"}{"\n"}
+            ROS url input:  </Text><TextInput name="urlInput" placeholder="add url here."defaultValue={url} onChange={event => changeUrl(event.target.value)} />  
+        <Text>{"\n"}
             ROS url to connect to:  {url}  {"\n"}
             Status of ROS: { isConnected ? "connected" : "not connected" }   {"\n"}
             Topics detected:{"\n"}
@@ -57,21 +58,7 @@ function ToggleConnect() {
                 </View>
             )
             
-        })}
-
-
-         
-
-        {/* for (topic, i) in topics {
-        <Flatlist data = {[{key: i}
-                        ]}
-            renderItem={({topic, i}) => <Text> {i} :  {topic.path}</Text> }
-        />                       
-        } */}
- 
-        {/* } */}
-
-        
+        })}     
         </View>
 
 

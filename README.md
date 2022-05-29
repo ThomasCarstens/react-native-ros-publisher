@@ -1,11 +1,16 @@
-## react-native-ros-publisher 
-Currently experimenting with distributed networking of native sensors.
-_Why?_ This seems to be the first ROS-enabled native framework (as far as my googling tells me, as of May 2022)
+# react-native-ros-publisher 
+Currently experimenting with the **distributed networking of native sensors.**
+Tools: React Native, and ROS Noetic with rosbridge_suite to communicate JSON data to ROS.
 
-### Master branch: Template of basic functionality.
-![connect to ros and print topics](/assets/connected.jpeg =200x200 "Connects and Reads Network Topics.").
+**Why?** I want to send phone sensor data to my laptop using ROS.
+As of May 2022, this seem to be no other ROS-enabled native framework.
+This repo has the basic functionality which I tested on my phone.
 
-=> React Native connects to ros and prints topics.
+## Master branch: Template of basic functionality.
+![Android connects to ros and print topics](/assets/connected.jpeg =x100 "Connects and Reads Network Topics.").
 
-### Dev branch: Testing a ROS publisher of Android streamed data.
+Snapshot of my phone screen (Android): Connects to ros and prints topics. 
+
+
+## Dev branch: Testing a ROS publisher of Android streamed data.
 Star for updates.
