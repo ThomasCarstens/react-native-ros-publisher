@@ -1,16 +1,22 @@
 # react-native-ros-publisher 
 Currently experimenting with the **distributed networking of native sensors.**
-Tools: React Native, and ROS Noetic with rosbridge_suite to communicate JSON data to ROS.
 
-**Why?** I want to send phone sensor data to my laptop using ROS.
-As of May 2022, this seem to be no other ROS-enabled native framework.
-This repo has the basic functionality which I tested on my phone.
+**Why?** I wish to stream data between my phone and my laptop. 
+- ROS offers the versatility of distributed networking tools. As of May 2022, this seem to be no other native mobile framework directly compatible with ROS.
+- Websockets have low latency for realtime streaming as opposed to REST APIs.
+
+This is an RN project that transfers JSON via ROS/Websockets. 
+
+Tested on Samsung using React Native (RN), and to Ubuntu 20 
+- PC to phone via `rosbridge_suite` on ROS
+- phone to PC via websockets
 
 ## Master branch: Template of basic functionality.
-![Android connects to ros and print topics](/assets/connected.jpeg =x100 "Connects and Reads Network Topics.").
+![Android connects to ros and print topics](/assets/connected.jpeg width=300 "Connects and Reads Network Topics.").
 
 Snapshot of my phone screen (Android): Connects to ros and prints topics. 
 
 
-## Dev branch: Testing a ROS publisher of Android streamed data.
-Star for updates.
+## Dev branch: Testing Android streaming in RN Viro app.
+### 7 June '22
+Near realtime viz acquired
