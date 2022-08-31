@@ -3,5 +3,5 @@ Currently experimenting with distributed networking of native sensors.
 
 ### Master branch: Template of basic functionality.
 
-<img src="https://github.com/ThomasCarstens/react-native-ros-publisher/blob/master/assets/connected.jpeg" width="96">
+<img src="https://github.com/ThomasCarstens/react-native-ros-publisher/blob/master/assets/connected.jpeg" width="300">
 Current: Connects and Reads Network Topics.
